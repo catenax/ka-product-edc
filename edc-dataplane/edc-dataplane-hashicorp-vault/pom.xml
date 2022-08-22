@@ -122,6 +122,8 @@
                                     <workingDirectory>${project.basedir}</workingDirectory>
                                     <arguments>
                                         <argument>build</argument>
+                                        <argument>--platform</argument>
+                                        <argument>${platform}</argument>
                                         <argument>-f</argument>
                                         <argument>src/main/docker/Dockerfile</argument>
                                         <argument>--build-arg</argument>
@@ -129,7 +131,7 @@
                                         <argument>--build-arg</argument>
                                         <argument>LIB=target/lib</argument>
                                         <argument>-t</argument>
-                                        <argument>${project.artifactId}:${project.version}</argument>
+                                        <argument>${repo}${project.artifactId}:${project.version}</argument>
                                         <argument>.</argument>
                                     </arguments>
                                 </configuration>
@@ -145,8 +147,8 @@
                                     <workingDirectory>${project.basedir}</workingDirectory>
                                     <arguments>
                                         <argument>tag</argument>
-                                        <argument>${project.artifactId}:${project.version}</argument>
-                                        <argument>${project.artifactId}:latest</argument>
+                                        <argument>${repo}${project.artifactId}:${project.version}</argument>
+                                        <argument>${repo}${project.artifactId}:latest</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
