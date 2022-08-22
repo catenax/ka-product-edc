@@ -91,6 +91,10 @@
         <sonar.organization>catenax-ng</sonar.organization>
         <sonar.projectKey>catenax-ng_product-edc</sonar.projectKey>
         <sonar.moduleKey>${project.groupId}_${project.artifactId}</sonar.moduleKey>
+        
+        <!-- REPO -->
+        <repo>ghcr.io/catenax-ng/product-knowledge/dataspace/</repo>
+        <platform>linux/amd64</platform>
     </properties>
 
     <repositories>
