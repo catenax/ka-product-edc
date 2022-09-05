@@ -103,13 +103,7 @@
         </repository>
         <repository> <!-- To be able to use edc snapshot "releases" -->
             <id>github-edc</id>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <url>https://maven.pkg.github.com/catenax/ka-DataSpaceConnector</url>
+            <url>https://maven.pkg.github.com/catenax/ka-Dataspaceconnector</url>
         </repository>
         <repository> <!-- IDS infomodel -->
             <id>fraunhofer-iais-eis</id>
