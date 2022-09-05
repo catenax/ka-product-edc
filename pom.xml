@@ -104,14 +104,8 @@
             <url>https://repo1.maven.org/maven2</url>
         </repository>
         <repository> <!-- To be able to use edc snapshot "releases" -->
-            <id>sonatype-snapshots</id>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <id>github-edc</id>
+            <url>https://maven.pkg.github.com/catenax/ka-Dataspaceconnector</url>
         </repository>
         <repository> <!-- IDS infomodel -->
             <id>fraunhofer-iais-eis</id>
