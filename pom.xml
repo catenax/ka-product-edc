@@ -18,7 +18,7 @@
 
     <groupId>net.catenax.edc</groupId>
     <artifactId>product-edc-parent</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.1-KA</version>
     <packaging>pom</packaging>
 
     <name>product-edc</name>
@@ -65,7 +65,7 @@
         <org.awaitility.awaitility.version>4.2.0</org.awaitility.awaitility.version>
 
         <!-- dependency version -->
-        <org.eclipse.dataspaceconnector.version>0.0.1-20220902-SNAPSHOT</org.eclipse.dataspaceconnector.version>
+        <org.eclipse.dataspaceconnector.version>0.1.1-KA</org.eclipse.dataspaceconnector.version>
         <com.azure.sdk.bom.version>1.2.2</com.azure.sdk.bom.version>
         <org.postgresql.version>42.5.0</org.postgresql.version>
         <org.flywaydb.version>9.2.2</org.flywaydb.version>
@@ -98,14 +98,14 @@
             <url>https://repo1.maven.org/maven2</url>
         </repository>
         <repository> <!-- To be able to use edc snapshot "releases" -->
-            <id>sonatype-snapshots</id>
+            <id>github-edc</id>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
             <releases>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </releases>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <url>https://maven.pkg.github.com/catenax/ka-DataSpaceConnector</url>
         </repository>
         <repository> <!-- IDS infomodel -->
             <id>fraunhofer-iais-eis</id>
@@ -113,6 +113,20 @@
             <url>https://maven.iais.fraunhofer.de/artifactory/eis-ids-public</url>
         </repository>
     </repositories>
+
+    <distributionManagement>
+
+        <repository>
+
+            <id>github</id>
+
+            <name>Catena-X Maven Repository on Github</name>
+
+            <url>https://maven.pkg.github.com/catenax/ka-product-edc</url>
+
+        </repository>
+
+    </distributionManagement>
 
     <build>
         <pluginManagement>
