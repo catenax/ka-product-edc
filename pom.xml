@@ -18,7 +18,7 @@
 
     <groupId>net.catenax.edc</groupId>
     <artifactId>product-edc-parent</artifactId>
-    <version>0.1.1-KA</version>
+    <version>0.1.1-KA-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>product-edc</name>
@@ -65,7 +65,7 @@
         <org.awaitility.awaitility.version>4.2.0</org.awaitility.awaitility.version>
 
         <!-- dependency version -->
-        <org.eclipse.dataspaceconnector.version>0.1.1-KA</org.eclipse.dataspaceconnector.version>
+        <org.eclipse.dataspaceconnector.version>0.1.1-KA-SNAPSHOT</org.eclipse.dataspaceconnector.version>
         <com.azure.sdk.bom.version>1.2.2</com.azure.sdk.bom.version>
         <org.postgresql.version>42.5.0</org.postgresql.version>
         <org.flywaydb.version>9.2.2</org.flywaydb.version>
