@@ -117,6 +117,12 @@ edc:
       port: "9090"
       # -- The path mapping the prometheus metrics are going to be exposed at
       path: /metrics
+    ## Prometheus endpoint
+    callback:
+      # -- The network port, which the data plane/api wrapper callback sits upon
+      port: "8186"
+      # -- The path mapping the data plane/api wrapper callback sits upon
+      path: /callback
 
 service:
   # -- [Service type](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) to expose the running application on a set of Pods as a network service.
@@ -133,6 +139,7 @@ ingresses:
     # -- EDC endpoints exposed by this ingress resource
     endpoints:
       - public
+      - default
     # -- Defines the [ingress class](https://kubernetes.io/docs/concepts/services-networking/ingress/#ingress-class)  to use
     className: ""
     # -- TLS [tls class](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls) applied to the ingress resource

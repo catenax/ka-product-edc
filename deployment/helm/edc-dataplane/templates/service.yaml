@@ -25,5 +25,9 @@ spec:
       targetPort: metrics
       protocol: TCP
       name: metrics
+    - port: {{ .Values.edc.endpoints.callback.port }}
+      targetPort: callback
+      protocol: TCP
+      name: callback
   selector:
     {{- include "edc-dataplane.selectorLabels" . | nindent 4 }}
