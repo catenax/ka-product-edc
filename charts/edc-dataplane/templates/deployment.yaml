@@ -56,6 +56,9 @@ spec:
             - name: metrics
               containerPort: {{ .Values.edc.endpoints.metrics.port }}
               protocol: TCP
+            - name: callback
+              containerPort: {{ .Values.edc.endpoints.callback.port }}
+              protocol: TCP
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             httpGet:

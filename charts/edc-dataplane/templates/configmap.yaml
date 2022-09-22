@@ -21,3 +21,8 @@ data:
 
   logging.properties: |-
     {{- .Values.logging.properties | nindent 4 }}
+    
+  {{- range $resource := .Values.additionalResources }}
+  {{ $resource.key }}: |-
+  { { - $resource.value | nindent 4 } }
+  {{- end }}

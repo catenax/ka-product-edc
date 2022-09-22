@@ -117,7 +117,7 @@ edc:
       port: "9090"
       # -- The path mapping the prometheus metrics are going to be exposed at
       path: /metrics
-    ## Prometheus endpoint
+    ## Agent API Wrapper
     callback:
       # -- The network port, which the data plane/api wrapper callback sits upon
       port: "8186"
@@ -236,6 +236,12 @@ configuration:
     # edc.core.system.health.check.readiness-period=
     # edc.core.system.health.check.startup-period=
     # edc.core.system.health.check.threadpool-size=
+    #
+    # edc.api.control.auth.apikey.key=X-Api-Key
+    # edc.api.control.auth.apikey.value=foo
+    # cx.agent.controlplane.url=http://oem-control-plane:8181/data
+    # cx.agent.asset.file=dataspace.ttl
+    #
     # edc.dataplane.queue.capacity=
     # edc.dataplane.wait=
     # edc.dataplane.workers=
@@ -311,3 +317,10 @@ configuration:
     # edc.web.rest.cors.headers=
     # edc.web.rest.cors.methods=
     # edc.web.rest.cors.origins=
+
+additionalresources:
+#  -
+#    key: dataspace.ttl
+#    value: |-
+#{{- .Files.Get "resources/dataspace.ttl" | nindent 8 }}
+
