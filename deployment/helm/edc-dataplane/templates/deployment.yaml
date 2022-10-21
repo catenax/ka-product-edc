@@ -109,6 +109,10 @@ spec:
                 path: opentelemetry.properties
               - key: logging.properties
                 path: logging.properties
+{{- range $resource := .Values.additionalResources }}
+              - key: {{ $resource.key }}
+                path: {{ $resource.key }}
+{{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
