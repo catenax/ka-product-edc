@@ -93,7 +93,7 @@
         <sonar.moduleKey>${project.groupId}_${project.artifactId}</sonar.moduleKey>
         
         <!-- REPO -->
-        <repo>ghcr.io/catenax-ng/product-knowledge/dataspace/</repo>
+        <repo>ghcr.io/catenax-ng/product-knowledge/</repo>
         <platform>linux/amd64</platform>
     </properties>
 
