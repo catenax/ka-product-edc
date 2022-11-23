@@ -68,7 +68,7 @@
         <!-- dependency version -->
         <org.eclipse.dataspaceconnector.version>0.1.2-KA-SNAPSHOT</org.eclipse.dataspaceconnector.version>
         <com.azure.sdk.bom.version>1.2.2</com.azure.sdk.bom.version>
-        <org.postgresql.version>42.5.0</org.postgresql.version>
+        <org.postgresql.version>42.5.1</org.postgresql.version>
         <org.flywaydb.version>9.3.1</org.flywaydb.version>
         <com.nimbus.jose.jwt.version>8.23</com.nimbus.jose.jwt.version>
 
